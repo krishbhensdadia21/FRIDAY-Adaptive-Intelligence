@@ -232,7 +232,7 @@ This project is for educational and research purposes.
 
 # 👨‍💻 Author
 
-Developed by Krish Patel
+Developed by Krish Bhensdadia
 
 ---
 
