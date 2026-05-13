@@ -1,6 +1,6 @@
 # F.R.I.D.A.Y – Advanced AI Assistant Web Application
 
-*F.R.I.D.A.Y* is an intelligent, responsive and modern AI assistant web application built using **Python, Flask, HTML, CSS, JavaScript and Groq LLM APIs**. It combines conversational AI, Wikipedia-based knowledge retrieval and real-time web search to provide fast, accurate and context-aware responses. The system is designed with a smart intent-classification pipeline that dynamically selects the best response strategy.
+*F.R.I.D.A.Y* is an Adaptive Intelligence System built using **Python, Flask, HTML, CSS, JavaScript and Groq LLM APIs**. It combines conversational AI, Wikipedia-based knowledge retrieval and real-time web search to provide fast, accurate and context-aware responses. The system is designed with a smart intent-classification pipeline that dynamically selects the best response strategy.
 
 ## Features
 
