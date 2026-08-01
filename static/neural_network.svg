@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 400 800" fill="none">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Glow effects in background -->
+  <circle cx="180" cy="280" r="100" fill="url(#glow)" />
+  <circle cx="270" cy="660" r="120" fill="url(#glow)" />
+  <circle cx="80" cy="520" r="80" fill="url(#glow)" />
+
+  <!-- Connections -->
+  <g stroke="#a78bfa" stroke-width="1" opacity="0.18">
+    <line x1="50" y1="100" x2="150" y2="80" />
+    <line x1="50" y1="100" x2="100" y2="220" />
+    <line x1="150" y1="80" x2="220" y2="140" />
+    <line x1="150" y1="80" x2="180" y2="280" />
+    <line x1="220" y1="140" x2="280" y2="240" />
+    <line x1="220" y1="140" x2="180" y2="280" />
+    <line x1="100" y1="220" x2="60" y2="320" />
+    <line x1="100" y1="220" x2="180" y2="280" />
+    <line x1="60" y1="320" x2="140" y2="440" />
+    <line x1="60" y1="320" x2="80" y2="520" />
+    <line x1="180" y1="280" x2="240" y2="380" />
+    <line x1="180" y1="280" x2="140" y2="440" />
+    <line x1="280" y1="240" x2="240" y2="380" />
+    <line x1="280" y1="240" x2="320" y2="480" />
+    <line x1="240" y1="380" x2="200" y2="560" />
+    <line x1="240" y1="380" x2="320" y2="480" />
+    <line x1="140" y1="440" x2="80" y2="520" />
+    <line x1="140" y1="440" x2="200" y2="560" />
+    <line x1="80" y1="520" x2="130" y2="680" />
+    <line x1="80" y1="520" x2="60" y2="720" />
+    <line x1="200" y1="560" x2="270" y2="660" />
+    <line x1="200" y1="560" x2="130" y2="680" />
+    <line x1="320" y1="480" x2="270" y2="660" />
+    <line x1="270" y1="660" x2="210" y2="760" />
+    <line x1="130" y1="680" x2="60" y2="720" />
+    <line x1="130" y1="680" x2="210" y2="760" />
+  </g>
+
+  <!-- Secondary subtle connections -->
+  <g stroke="#818cf8" stroke-width="0.5" opacity="0.12">
+    <line x1="50" y1="100" x2="220" y2="140" />
+    <line x1="100" y1="220" x2="140" y2="440" />
+    <line x1="60" y1="320" x2="180" y2="280" />
+    <line x1="280" y1="240" x2="200" y2="560" />
+    <line x1="240" y1="380" x2="270" y2="660" />
+    <line x1="80" y1="520" x2="200" y2="560" />
+    <line x1="130" y1="680" x2="270" y2="660" />
+  </g>
+
+  <!-- Nodes -->
+  <g opacity="0.7">
+    <circle cx="50" cy="100" r="3.5" fill="#a78bfa" />
+    <circle cx="150" cy="80" r="2.5" fill="#818cf8" />
+    <circle cx="220" cy="140" r="4.5" fill="#a78bfa" />
+    <circle cx="100" cy="220" r="2.5" fill="#818cf8" />
+    <circle cx="60" cy="320" r="3.5" fill="#a78bfa" />
+    <circle cx="180" cy="280" r="5.5" fill="#818cf8" />
+    <circle cx="280" cy="240" r="3" fill="#a78bfa" />
+    <circle cx="240" cy="380" r="4" fill="#818cf8" />
+    <circle cx="140" cy="440" r="2.5" fill="#a78bfa" />
+    <circle cx="80" cy="520" r="4.5" fill="#818cf8" />
+    <circle cx="200" cy="560" r="2.5" fill="#a78bfa" />
+    <circle cx="320" cy="480" r="3.5" fill="#818cf8" />
+    <circle cx="270" cy="660" r="5" fill="#a78bfa" />
+    <circle cx="130" cy="680" r="3" fill="#818cf8" />
+    <circle cx="60" cy="720" r="3.5" fill="#a78bfa" />
+    <circle cx="210" cy="760" r="2.5" fill="#818cf8" />
+  </g>
+</svg>

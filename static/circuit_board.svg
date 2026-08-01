@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 400 800" fill="none">
+  <defs>
+    <radialGradient id="circuitGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Glowing areas in circuit -->
+  <circle cx="280" cy="250" r="120" fill="url(#circuitGlow)" />
+  <circle cx="150" cy="550" r="100" fill="url(#circuitGlow)" />
+
+  <!-- Main Chip outlines -->
+  <rect x="230" y="180" width="110" height="110" rx="8" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.25" />
+  <rect x="245" y="195" width="80" height="80" rx="4" fill="#0c4a6e" fill-opacity="0.1" stroke="#38bdf8" stroke-width="1" opacity="0.2" />
+
+  <rect x="80" y="480" width="90" height="90" rx="6" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.2" />
+
+  <!-- Chip pins / small lines -->
+  <g stroke="#38bdf8" stroke-width="1" opacity="0.2">
+    <!-- Left side of main chip -->
+    <line x1="215" y1="195" x2="230" y2="195" />
+    <line x1="215" y1="210" x2="230" y2="210" />
+    <line x1="215" y1="225" x2="230" y2="225" />
+    <line x1="215" y1="240" x2="230" y2="240" />
+    <line x1="215" y1="255" x2="230" y2="255" />
+    <line x1="215" y1="270" x2="230" y2="270" />
+    
+    <!-- Top side of main chip -->
+    <line x1="245" y1="165" x2="245" y2="180" />
+    <line x1="260" y1="165" x2="260" y2="180" />
+    <line x1="275" y1="165" x2="275" y2="180" />
+    <line x1="290" y1="165" x2="290" y2="180" />
+    <line x1="305" y1="165" x2="305" y2="180" />
+    <line x1="320" y1="165" x2="320" y2="180" />
+  </g>
+
+  <!-- Circuit Traces (Paths with 45 degree corners) -->
+  <g stroke="#38bdf8" stroke-width="1" fill="none" opacity="0.2">
+    <path d="M 50,120 L 180,120 L 230,170" />
+    <path d="M 50,140 L 160,140 L 210,190" />
+    <path d="M 120,50 L 120,100 L 150,130" />
+    
+    <path d="M 285,165 L 285,100 L 320,65" />
+    <path d="M 300,165 L 300,110 L 335,75" />
+    
+    <path d="M 340,235 L 380,235" />
+    <path d="M 340,250 L 390,250" />
+    
+    <path d="M 230,285 L 180,335 L 180,420 L 120,480" />
+    <path d="M 245,290 L 205,330 L 205,400 L 150,455" />
+
+    <path d="M 50,525 L 80,525" />
+    <path d="M 170,525 L 220,525 L 250,555 L 350,555" />
+    <path d="M 170,540 L 210,540 L 235,565 L 330,565 L 350,585" />
+    
+    <path d="M 125,570 L 125,650 L 160,685 L 280,685" />
+    <path d="M 140,570 L 140,640 L 175,675 L 260,675" />
+    
+    <path d="M 280,685 L 310,715 L 310,750" />
+  </g>
+
+  <!-- Solder joints / Junction points -->
+  <g fill="#38bdf8" opacity="0.6">
+    <circle cx="50" cy="120" r="2.5" />
+    <circle cx="50" cy="140" r="2.5" />
+    <circle cx="120" cy="50" r="2.5" />
+    <circle cx="320" cy="65" r="2.5" />
+    <circle cx="335" cy="75" r="2.5" />
+    <circle cx="380" cy="235" r="2.5" />
+    <circle cx="390" cy="250" r="2.5" />
+    <circle cx="50" cy="525" r="2.5" />
+    <circle cx="350" cy="555" r="2.5" />
+    <circle cx="350" cy="585" r="2.5" />
+    <circle cx="310" cy="750" r="2.5" />
+  </g>
+
+  <!-- Micro components -->
+  <g fill="#8b5cf6" opacity="0.4">
+    <rect x="150" y="110" width="8" height="4" />
+    <rect x="165" y="130" width="8" height="4" />
+    <rect x="200" y="350" width="10" height="5" />
+    <rect x="250" y="540" width="12" height="6" rx="1" />
+    <rect x="280" y="560" width="8" height="4" />
+  </g>
+</svg>

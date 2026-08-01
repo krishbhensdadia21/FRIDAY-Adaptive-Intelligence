@@ -14,6 +14,8 @@
 </head>
 <body>
 <div class="bg-elements">
+  <div class="bg-pattern neural-net"></div>
+  <div class="bg-pattern circuit-board"></div>
   <div class="glow-orb" style="width:400px;height:400px;background:var(--accent);top:-100px;left:-100px;"></div>
   <div class="glow-orb" style="width:300px;height:300px;background:var(--accent2);bottom:-50px;right:-50px;"></div>
 </div>
@@ -27,7 +29,10 @@
     </div>
     <div class="header-controls">
       <div class="status-pill"><div class="status-dot"></div><span id="statusLabel">ONLINE</span></div>
-      <button class="clear-btn" id="clearBtn">🗑️ CLEAR</button>
+      <button class="clear-btn" id="clearBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="header-icon"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+        CLEAR
+      </button>
     </div>
   </header>
 
@@ -45,13 +50,17 @@
           rows="1"
         ></textarea>
         <div class="input-actions">
-          <button class="icon-btn" id="micBtn" title="Voice input">🎤</button>
-          <button class="send-btn" id="sendBtn" disabled>➤</button>
+          <button class="icon-btn" id="micBtn" title="Voice input">
+            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="mic-icon"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg>
+          </button>
+          <button class="send-btn" id="sendBtn" disabled>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="send-icon"><path d="M4 18l3-2M2 14l5-1.5M6 21l2-2.5" opacity="0.7" stroke-width="1.5"></path><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
+          </button>
         </div>
       </div>
     </div>
     <div class="input-footer">
-      <span>Powered by Llama 3.3 • Groq • Wikipedia • Web Search</span>
+      <span>F.R.I.D.A.Y can make mistakes. Consider checking important info.</span>
     </div>
   </div>
 </div>

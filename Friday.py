@@ -383,6 +383,27 @@ def clear_history():
     return jsonify({'status': 'cleared'})
 
 
+@app.route('/api/trending', methods=['GET'])
+def get_trending():
+    """Returns the current trending theme dynamically (e.g. spiderman, batman, or default)"""
+    try:
+        prompt = (
+            "What is the top trending blockbuster or superhero movie in theaters right now as of August 2026?\n"
+            "Format your answer as a JSON object with two keys:\n"
+            "  'movie': The title of the movie\n"
+            "  'theme': One of 'spiderman', 'batman', 'superman', 'ironman', or 'default'\n\n"
+            "Provide ONLY the raw JSON block, nothing else."
+        )
+        response_text = groq_text([{"role": "user", "content": prompt}], max_tokens=100)
+        match = re.search(r'\{.*?\}', response_text, re.DOTALL)
+        if match:
+            data = json.loads(match.group(0))
+            return jsonify(data)
+    except Exception as e:
+        print(f"[ERROR] Failed to fetch trending: {e}")
+    return jsonify({"movie": "Spider-Man", "theme": "spiderman"})
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 # FRONTEND — Serve separated HTML/CSS/JS files
 # ─────────────────────────────────────────────────────────────────────────────
@@ -401,9 +422,9 @@ def serve_static(filename):
 if __name__ == '__main__':
     port = int(os.getenv("PORT", 5000))
     print(f"\n{'='*50}")
-    print(f"🚀 F.R.I.D.A.Y Advanced AI Assistant")
-    print(f"📍 Running at http://localhost:{port}")
-    print(f"📚 Wikipedia Search • 🌐 Web Search • 🧠 LLM")
-    print(f"🎤 Voice Input: ON | 🤖 AI Voice: Greeting Only")
+    print(f"  F.R.I.D.A.Y Advanced AI Assistant")
+    print(f"  Running at http://localhost:{port}")
+    print(f"  Wikipedia Search | Web Search | LLM")
+    print(f"  Voice Input: ON | AI Voice: Greeting Only")
     print(f"{'='*50}\n")
     app.run(debug=True, port=port)

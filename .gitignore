@@ -1,0 +1,7 @@
+.env
+*.pyc
+__pycache__/
+.agents/
+walkthrough.md
+implementation_plan.md
+task.md
